@@ -29,9 +29,9 @@ The dashboard segments borrowers into Low, Medium, and High-risk tiers, providin
 ---
 
 ## Dataset Information  
-<p align="center">
-  <img src="C:\Users\itsme\Downloads" alt="Lending Risk & Default Pattern Analysis Dashboard" width="100%">
-</p>
+<img width="1536" height="1024" alt="Lending Risk Analysis" src="https://github.com/user-attachments/assets/0298c18d-25dc-4196-8175-4794cf85ce23" />
+
+
 **Dataset:** Kaggle Loan Data and Finance data 
 
 | Column Name            | Description                              |
