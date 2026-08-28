@@ -1,21 +1,21 @@
 #  Lending Risk & Default Pattern Analysis 
 
-The **Lending Risk & Default Pattern Analysis** focuses on identifying factors that influence **loan repayment and defaults**, helping financial institutions enhance decision-making in loan approvals and risk management and an interactive Power BI dashboard analyzing loan approval trends, repayment status, and applicant demographics using real-world banking data.   This project visualizes key business insights to help financial institutions make data-driven lending decisions and understand customer patterns.
+The **Lending Risk & Default Pattern Analysis** project identifies factors influencing **loan default risk** using **Python, SQL, and Power BI**. Analyzing **5,000+ borrower records**, the project identified that borrowers with **debt-to-income ratios above 40% defaulted at 3× the average rate**. Power BI dashboards segmented borrowers into **Low, Medium, and High-risk tiers**, providing actionable insights for **credit risk management and reducing credit exposure**.
 
 
-##  Project Overview  
-The **Bank Loan Analytics Dashboard** explores key metrics around loan applications, approvals, and borrower profiles.  
-By leveraging Power BI’s dynamic visualization and DAX measures, this dashboard uncovers patterns that influence loan approval decisions — such as **income, gender, education, and property area.**
+##  Project Overview   
+The Lending Risk & Default Pattern Analysis project analyzes 5,000+ borrower records to identify patterns influencing loan defaults and credit risk. Using Python, SQL, and Power BI, the project focuses on data cleaning, risk segmentation, and identifying key factors such as debt-to-income ratio and borrower profiles.
 
-The project focuses on building a **data model, cleaning raw data**, and visualizing **approval rates, income analysis, and demographic trends** to support strategic decision-making in the banking sector.
+The dashboard segments borrowers into Low, Medium, and High-risk tiers, providing actionable insights to support credit risk management and informed lending decisions.
 
 ---
 
 ##  Objectives  
-- Identify factors influencing **loan approval and rejection**  
-- Analyze **income and education trends** across approved and rejected applications  
-- Compare **loan amount distributions** by demographics  
-- Visualize **key KPIs** like total applications, approval rate, and average loan amount  
+* Identify key factors influencing **loan default risk**
+* Analyze the impact of **debt-to-income ratio and borrower characteristics** on defaults
+* Segment borrowers into **Low, Medium, and High-risk tiers**
+* Develop **Power BI dashboards** to monitor risk patterns and support credit risk decisions
+ 
 
 ---
 
@@ -33,60 +33,70 @@ The project focuses on building a **data model, cleaning raw data**, and visuali
 
 **Dataset:** Kaggle Loan Data and Finance data 
 
-| Column Name | Description |
-|--------------|-------------|
-| `Loan_ID` | Unique identifier for each loan |
-| `Gender` | Applicant gender |
-| `Married` | Marital status of applicant |
-| `Dependents` | Number of dependents |
-| `Education` | Applicant education level |
-| `Self_Employed` | Employment type |
-| `ApplicantIncome` | Applicant’s income |
-| `CoapplicantIncome` | Co-applicant’s income |
-| `LoanAmount` | Loan amount requested |
-| `Loan_Amount_Term` | Duration of loan |
-| `Property_Area` | Urban/Rural/Semiurban |
-| `Loan_Status` | Loan approval status (Y/N) |
+| Column Name            | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `Borrower_ID`          | Unique identifier for each borrower      |
+| `Age`                  | Borrower’s age                           |
+| `Income`               | Borrower’s annual income                 |
+| `Debt_to_Income_Ratio` | Ratio of total debt to income            |
+| `Loan_Amount`          | Loan amount issued                       |
+| `Loan_Term`            | Duration of the loan                     |
+| `Employment_Status`    | Borrower’s employment type               |
+| `Credit_Score`         | Borrower’s creditworthiness score        |
+| `Loan_Purpose`         | Purpose of the loan                      |
+| `Risk_Tier`            | Low, Medium, or High-risk classification |
+| `Repayment_Status`     | Loan repayment status                    |
+| `Default_Status`       | Indicates whether the borrower defaulted |
+
 
 ---
 
 ##Dashboard Insights  
 
-### 🔹 1. Loan Approval Overview  
-- Donut Chart showing **approved vs. rejected loans**  
-- KPI Cards showing **Total Applications, Approved Loans, and Approval Rate**  
+## Dashboard Insights
 
-### 🔹 2. Income & Loan Amount Relationship  
-- Scatter plot visualizing **Applicant Income vs. Loan Amount**  
-- Insights on how **income level** influences **loan approval chances**  
+###  1. Default Risk Overview
 
-### 🔹 3. Education & Employment Analysis  
-- Bar Chart: **Education Level vs. Loan Approval**  
-- Clustered chart comparing **Self-Employed vs. Salaried applicants**  
+* KPI Cards showing **Total Borrowers, Default Rate, and High-Risk Borrowers**
+* Risk distribution across **Low, Medium, and High-risk tiers**
 
-### 🔹 4. Property Area Trends  
-- Map or bar chart highlighting **loan approvals by property area**  
+###  2. Debt-to-Income Risk Analysis
 
-### 🔹 5. Demographic Breakdown  
-- Gender and marital status comparison for approved loans  
-- Average loan amount per demographic group  
+* Visualizing **Debt-to-Income Ratio vs. Default Rate**
+* Highlighting the increased default risk among borrowers with **DTI above 40%**
+
+###  3. Borrower Risk Segmentation
+
+* Bar charts comparing **default rates across risk tiers**
+* Analysis of borrower characteristics associated with higher default risk
+
+###  4. Loan & Default Patterns
+
+* Comparison of **loan amounts and repayment/default status**
+* Identification of patterns contributing to **credit exposure**
+
+###  5. Risk Monitoring
+
+* Interactive filters for **borrower segments and risk categories**
+* Dashboard insights supporting **credit risk management and informed lending decisions**
+
 
 ---
 
 ## Key Insights
 
-Overall Approval Rate: Most loans are approved for applicants with higher incomes and graduates.
+**Overall Default Risk:** Borrowers with higher financial obligations show greater exposure to loan defaults.
 
-Property Area Influence: Urban areas show higher approval rates compared to rural regions.
+**DTI Influence:** Borrowers with **debt-to-income ratios above 40% default at approximately 3× the average rate**, indicating significantly higher credit risk.
 
-Gender Distribution: Male applicants dominate, but female applicants show higher repayment consistency.
+**Risk Segmentation:** High-risk borrowers account for a greater share of defaults compared with Low and Medium-risk segments.
 
-Education & Employment: Graduates and salaried individuals are more likely to receive approvals.
+**Borrower Patterns:** Loan amount, income, and borrower characteristics help identify patterns associated with **default risk and credit exposure**.
+
 
 ## Conclusion
 
-The dashboard highlights that income stability, education level, and urban residency are key factors influencing loan approval.
-By analyzing these metrics, financial institutions can improve their risk assessment and ensure fair, data-driven lending decisions.  
+The analysis highlights debt-to-income ratio, income, and borrower characteristics as key factors influencing loan default risk. By identifying high-risk borrowers and segmenting them into risk tiers, financial institutions can strengthen credit risk assessment, reduce credit exposure, and support data-driven lending decisions. 
 
 ## 📬 Contact
  [LinkedIn](https://www.linkedin.com/in/swasthik-bs).
